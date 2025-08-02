@@ -1,0 +1,178 @@
+/* Mobile Responsive Styles */
+
+@media (max-width: 768px) {
+  .section {
+    padding: 3rem 1rem;
+  }
+
+  /* Hero Section */
+  .hero-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .hero-name {
+    font-size: 2.2rem;
+  }
+
+  .hero-name::after {
+    right: -25px;
+    font-size: 1.2rem;
+  }
+
+  .hero-desc {
+    font-size: 1rem;
+  }
+
+  .hero-note {
+    font-size: 0.9rem;
+    padding: 0 1rem;
+  }
+
+  /* Section Titles */
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .section-title::before,
+  .section-title::after {
+    display: none;
+  }
+
+  /* Notes Section */
+  .note-card {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .note-chapter {
+    font-size: 1.8rem;
+  }
+
+  .note-lyrics {
+    font-size: 1rem;
+  }
+
+  .note-body {
+    font-size: 0.9rem;
+  }
+
+  /* Memories Gallery */
+  .memories-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .memory img {
+    height: 180px;
+  }
+
+  .memory-caption {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  /* Audio Controls */
+  .audio-controls {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .audio-controls button {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+
+  .audio-slider {
+    min-width: 100%;
+  }
+
+  /* Music Toggle */
+  #music-toggle {
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  /* WhatsApp Button */
+  .whatsapp-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 2rem 0.5rem;
+  }
+
+  /* Hero Section */
+  .hero-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .hero-name {
+    font-size: 1.8rem;
+  }
+
+  .hero-desc {
+    font-size: 0.9rem;
+  }
+
+  .hero-note {
+    font-size: 0.8rem;
+  }
+
+  /* Section Titles */
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  /* Notes Section */
+  .note-card {
+    padding: 1rem;
+  }
+
+  .note-chapter {
+    font-size: 1.5rem;
+  }
+
+  /* Memories Gallery */
+  .memories-gallery {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+  }
+
+  .memory img {
+    height: 150px;
+  }
+
+  .memory-caption {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+
+  /* Popup */
+  .popup-content {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  .popup-text {
+    font-size: 1.5rem;
+  }
+
+  .popup-image {
+    max-width: 200px;
+  }
+
+  #popup-close {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To My Love, Jesutomiloluwa</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <!-- 🌌 Background Particles -->
+  <div id="particles-js"></div>
+
+  <!-- 🎵 Music Toggle -->
+  <button id="music-toggle">
+    <span id="music-icon">🔊</span> Music
+  </button>
+
+  <audio id="bg-music" loop autoplay>
+    <source src="music/perfect-ed-sheeran.mp3" type="audio/mp3" />
+    Your browser does not support the audio tag.
+  </audio>
+
+  <!-- ✨ Hero Section -->
+  <section id="hero" class="section hero-section" data-aos="fade-up">
+    <div class="hero-content">
+      <img src="images/her1.jpg" alt="Jesutomiloluwa" class="hero-img" />
+      <h1 class="hero-name">Jesutomiloluwa Ayorinde</h1>
+      <p class="hero-desc">The love of my life 💙</p>
+      <p class="hero-note">I love you more than words can ever express.</p>
+      <div class="scroll-down">⬇️</div>
+    </div>
+  </section>
+
+  <!-- 💌 Love Notes Section -->
+  <section id="love-notes" class="section love-notes-section" data-aos="fade-right">
+    <h2 class="section-title">Our Love Story</h2>
+    <div id="notes-container" class="notes-container">
+      <!-- JS will inject the love letters here -->
+    </div>
+  </section>
+
+  <!-- 📸 Memories Section -->
+  <section id="memories" class="section memories-section" data-aos="zoom-in">
+    <h2 class="section-title">Moments With You</h2>
+    <div class="memories-gallery horizontal">
+      <div class="memory">
+        <img src="images/her3.jpg" alt="Memory 1" class="small-img sparkle-hover" />
+        <p class="memory-caption">Seeing your face uplifts me</p>
+      </div>
+      <div class="memory">
+        <img src="images/her4.jpg" alt="Memory 2" class="small-img sparkle-hover" />
+        <p class="memory-caption">The way you smiled this day lit my day.</p>
+      </div>
+      <div class="memory">
+        <img src="images/her2.jpg" alt="Memory 3" class="small-img sparkle-hover" />
+        <p class="memory-caption">You radiate light effortlessly.</p>
+      </div>
+      <div class="memory">
+        <img src="images/her1.jpg" alt="Memory 4" class="small-img sparkle-hover" />
+        <p class="memory-caption">Every glance of you is art to me.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🎁 Surprise Pop-up -->
+  <div id="surprise-popup" class="popup hidden">
+    <div class="popup-content" data-aos="flip-up">
+      <p class="popup-text">Will you always be mine?</p>
+      <img src="images/her2.jpg" class="popup-image" />
+      <button id="popup-close">❤️ Got it</button>
+    </div>
+  </div>
+
+  <!-- 📞 Contact Section -->
+  <section id="contact" class="section contact-section" data-aos="fade-left">
+    <h2>Let's Talk Anytime</h2>
+    <a href="https://wa.me/2349047515607?text=Hey%20Genie" class="whatsapp-btn" target="_blank">
+      Message me on WhatsApp 💬
+    </a>
+    <footer class="footer">
+      <p>❤️ Always here for you</p>
+    </footer>
+  </section>
+
+  <!-- 🎇 Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+
+    particlesJS.load('particles-js', 'particles-config.json', function () {
+      console.log('Particles.js loaded 🎉');
+    });
+
+    const music = document.getElementById('bg-music');
+    const toggleBtn = document.getElementById('music-toggle');
+    const musicIcon = document.getElementById('music-icon');
+    let isPlaying = true;
+
+    toggleBtn.addEventListener('click', () => {
+      if (!isPlaying) {
+        music.play();
+        musicIcon.textContent = '🔈';
+      } else {
+        music.pause();
+        musicIcon.textContent = '🔇';
+      }
+      isPlaying = !isPlaying;
+    });
+  </script>
+
+  <!-- Custom JS Files -->
+  <script src="data/messages.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
